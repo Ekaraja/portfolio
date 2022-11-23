@@ -1,77 +1,90 @@
 ---
-import MainHead from '../components/MainHead.astro';
-import Footer from '../components/Footer.astro';
-import Nav from '../components/Nav.astro';
+	import MainHead from '../components/MainHead.astro';
+	import Footer from '../components/Footer.astro';
+	import Nav from '../components/Nav.astro';
+
+	console.log("onche")
 ---
 
 <html lang="en">
-	<head>
-		<MainHead title="About | Jeanine White" description="About Jeanine White Lorem Ipsum" />
-		<style>
-			.heroImg {
-				max-height: 24rem;
-				object-fit: cover;
-				overflow: hidden;
-			}
 
-			.heroImg img {
-				width: 100%;
-			}
+<head>
+	<MainHead title="About me" description="About me" />
+	<style>
+		.heroImg {
+			max-height: 24rem;
+			object-fit: cover;
+			overflow: hidden;
+		}
 
-			.bio {
-				font-size: var(--f-u1);
-				line-height: 2;
-				margin-top: 4em;
-			}
+		.heroImg img {
+			width: 100%;
+			border-radius: 2rem;
+		}
 
-			.wrapper.bio {
-				max-width: 50em;
-			}
-		</style>
-	</head>
-	<body>
-		<Nav />
-		<div class="wrapper">
-			<h1>About Jeanine</h1>
-			<div class="heroImg">
-				<img
-					width="1400"
-					height="350"
-					src="https://images.unsplash.com/photo-1581977012607-4091712d36f9?auto=format&fit=crop&w=1400&h=350&q=75"
-				/>
-			</div>
-			<div class="bio wrapper">
-				<p>
-					Cream cheese say cheese stinking bishop. Brie fondue hard cheese bocconcini feta camembert
-					de normandie babybel airedale. Red leicester swiss manchego mascarpone pepper jack
-					airedale fromage frais ricotta. Cheese and biscuits cauliflower cheese boursin.
-				</p>
-				<p>
-					Pepper jack cheesy feet cheese slices. Halloumi port-salut queso caerphilly roquefort
-					cheese slices cheesy feet rubber cheese. Cheese slices smelly cheese pecorino macaroni
-					cheese feta blue castello roquefort edam. Babybel pepper jack airedale cheddar fromage
-					frais manchego.
-				</p>
-				<p>
-					Cauliflower cheese lancashire macaroni cheese. Cheeseburger babybel cheese on toast
-					airedale cauliflower cheese who moved my cheese roquefort paneer. Stinking bishop cheddar
-					taleggio port-salut port-salut stinking bishop cheesy grin babybel. Blue castello feta
-					everyone loves brie.
-				</p>
-				<p>
-					Goat squirty cheese cut the cheese. Cheese and wine cheddar fondue airedale cottage cheese
-					camembert de normandie feta babybel. Rubber cheese melted cheese pecorino port-salut
-					fondue gouda cheese on toast cheesy feet. Feta edam everyone loves cheese strings
-					camembert de normandie.
-				</p>
-				<p>
-					Caerphilly monterey jack goat. Squirty cheese cheesy grin hard cheese cheese strings
-					cheese and biscuits croque monsieur smelly cheese danish fontina. Swiss cheese triangles
-					everyone loves mascarpone cheese on toast who moved my cheese lancashire cheeseburger.
-					Fromage frais fromage frais cheese and biscuits stinking bishop cauliflower cheese.
-				</p>
-			</div>
+		.bio {
+			font-size: var(--f-u1);
+			line-height: 2;
+			margin-top: 4em;
+		}
+
+		.wrapper.bio {
+			max-width: 50em;
+		}
+	</style>
+</head>
+
+<body>
+	<Nav />
+	<div class="wrapper">
+		<h1>About me (french)</h1>
+		<div class="heroImg">
+			<img width="1400" height="350"
+				src="https://images.unsplash.com/photo-1479719892862-491b594c3903?auto=format&fit=crop&w=1400&h=350&q=75" />
 		</div>
-		<Footer />
-	</body>
+		<div class="bio wrapper">
+
+
+
+			<!-- <p>After an education as a linguist and language teacher, during which I taught languages for 2 years ; I
+				learned web development in order to create applications in the educational field.</p>
+
+			<p>I started learning code and development self-taught in 2021. Followed by joining an intensive code
+				learning program where I learned the fundamental skills to create a web application from scratch.
+				(HTML/CSS/JS/React/Express/Mongo DB). </p>
+
+			<p>My final project called Web4All was a quiz application for coders wishing to test their knowledge of web
+				language, as a Lead Dev Front-End I was in charge of the React rendering and CSS styling with Material
+				UI.</p> -->
+
+			<p> Après une formation de linguiste et de professeur de langues, durant laquelle j'ai enseigné pendant 2
+				ans ; j'ai appris le développement web afin de créer des applications dans le domaine de l’éducation.
+
+				J'ai commencé à apprendre le code et le développement en autodidacte en 2021. Suivi d’un programme
+				intensif d'apprentissage du code de 4 mois où j'ai appris les compétences fondamentales pour créer une
+				application web à partir de zéro. (HTML/CSS/JS/React/Express/Mongo DB). </p>
+
+			<p>A ce jour après 1 an et demi de freelance, j'ai satisfait une trentaine de client à travers des missions
+				front-end variée allant de : </p>
+
+			<ul>
+				<li>La résolution de bugs CSS et Javascript</li>
+				<li>La création d'un seul ou plusieurs composant pour un gros projet web</li>
+				<li>L'intégration de maquettes en HTML/CSS/JS & React</li>
+				<li>La reproduction à l'identique d'un site</li>
+			</ul>
+
+			Personne volontaire, toujours dans la recherche d’amélioration et l'apport de solution ; plutôt créative et
+			rarement à court d’idée !
+			<p>
+				Lors de ma formation universitaire, j'ai surtout appris à apprendre, par conséquent j'accueil très
+				volontiers les technologies qui me sont inconnus. De manière général je suis passionné par les choses
+				que j'étudie. C'est ce qui m'a permis de me reconvertir dans le code rapidement. En outre je fais
+				régulièrement de la veille technologique pour me tenir au courant de l'évolution rapide dans le monde du
+				développement web.</p>
+		</div>
+	</div>
+	<Footer />
+</body>
+
 </html>

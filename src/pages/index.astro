@@ -28,6 +28,35 @@ const featuredProject = projects[0];
 			.hero {
 				position: relative;
 				overflow: hidden;
+				border-radius: 4rem 4rem 0 0;
+
+			}
+
+			.hero::before {
+				content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+				background-image: radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0px, transparent 50%),
+radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%),
+radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
+radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%), url("https://images.unsplash.com/photo-1662499839993-0cc2b441b0f8?w=1600&q=75 1600w,https://images.unsplash.com/photo-1662499839993-0cc2b441b0f8?w=2400&q=75");
+  /* Set a specific height */
+  min-height: 500px;
+/*   filter:  opacity(62%) ; */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+			}
+
+			.hero img {
+				
 			}
 
 			@media (min-width: 750px) {
@@ -44,7 +73,8 @@ const featuredProject = projects[0];
 
 			.gradient,
 			.gradient2 {
-				background-image: url('/assets/mesh-gradient.jpg');
+			/* 	background-image: url('https://products.ls.graphics/mesh-gradients/images/45.-Fog_1.jpg'); */
+				opacity: 70%;
 				background-size: cover;
 				pointer-events: none;
 				mix-blend-mode: screen;
@@ -83,11 +113,19 @@ const featuredProject = projects[0];
 			}
 
 			.title {
-				font-family: 'Kiwi Maru', serif;
-				font-weight: 500;
-				font-size: var(--f-u6);
+				/* font-family: 'Kiwi Maru', serif; */
+				font-family: 'Yeseva One', cursive;
+				/* font-family: 'Niconne', cursive; */
+				font-weight: 700;
+				/* font-size: 8rem !important; */
 				margin-bottom: 0.5rem;
 				margin-top: 0;
+	color: white;
+				/* 			text-shadow: 5px 5px 0px #eb452b, 
+                  10px 10px 0px #efa032, 
+                  15px 15px 0px #46b59b, 
+                  20px 20px 0px #017e7f, 
+                  25px 25px 0px #052939; */
 			}
 
 			@media (min-width: 750px) {
@@ -108,6 +146,7 @@ const featuredProject = projects[0];
 			}
 
 			.sectionTitle {
+				font-family: 'Yeseva One', cursive;
 				font-weight: 700;
 				font-size: var(--f-u8);
 				margin-top: 4rem;
@@ -126,7 +165,8 @@ const featuredProject = projects[0];
 			}
 
 			.role {
-
+				text-decoration: none;
+				border-radius: 100vmax;
 				position: relative;
 				display: inline-block;
 				white-space: nowrap;
@@ -209,24 +249,24 @@ const featuredProject = projects[0];
 	<body>
 		<Nav />
 		<header class="hero">
-			<img
+<!-- 			<img
 				width="1600"
 				height="1131"
 				class="img"
 				src="https://images.unsplash.com/photo-1662499839993-0cc2b441b0f8?w=1200&q=75"
 				srcset="https://images.unsplash.com/photo-1662499839993-0cc2b441b0f8?w=1200&q=75 800w,https://images.unsplash.com/photo-1662499839993-0cc2b441b0f8?w=1200&q=75 1200w,https://images.unsplash.com/photo-1662499839993-0cc2b441b0f8?w=1600&q=75 1600w,https://images.unsplash.com/photo-1662499839993-0cc2b441b0f8?w=2400&q=75 2400w"
 				sizes="(max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (max-width: 2400px) 2400px, 1200px"
-			/>
+			/> -->
 			<div class="gradient"></div>
 			<div class="gradient2"></div>
 			<div class="overlay">
 				<h1 class="title">
-					Eric Soeun
+					eric soeun
 				</h1>
 				<div class="roles">
-					<span class="role">👩‍💻 Front-End Developer <span class="invert">👩‍💻 Front-End Developer </span></span>
-					<span class="role">👨‍🏫 Teacher <span class="invert">👨‍🏫 Teacher </span></span>
-					<span class="role">🐕 Pet sitter <span class="invert">🐈 Pet sitter </span></span>
+					<a href="https://www.fiverr.com/ekokoro" class="role">👩‍💻 Front-End Developer <span class="invert">👩‍💻 Front-End Developer </span></a>
+					<a href="https://www.superprof.fr/etudiant-diplome-langue-donne-cours-khmer-paris-cambodgien.html" class="role">👨‍🏫 Teacher <span class="invert">👨‍🏫 Teacher </span></a>
+					<a href="https://fr.holidog.com/recherche/profil/66580" class="role">🐕 Pet sitter <span class="invert">🐈 Pet sitter </span></a>
 				</div>
 				<p class="desc">Creator of Linguisme, an app for language learners </p>
 			</div>
