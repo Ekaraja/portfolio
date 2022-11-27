@@ -26,7 +26,7 @@ function StackCards() {
         <LanguageIcon language="Ruby" icon={icon.ruby} /> */}
         <LanguageIcon icon={icon.ruby} />
         <Tippy content="CSS3" placement="bottom" theme="light">
-          <li>{icon.css}</li>
+          <p>CSS</p>
         </Tippy>
       </ul>
     </div>
