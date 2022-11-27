@@ -6,12 +6,10 @@ import 'tippy.js/dist/tippy.css';
 import 'tippy.js/themes/light.css';
 
 
-
-const LanguageIcon = (props) => {
+const LanguageIcon = ({language, icon}) => {
   return (
-
-    <Tippy content={props.language} placement="bottom" theme="light">
-      <p>{props.icon}</p>
+    <Tippy content={language} placement="bottom" theme="light">
+      <p>{icon}</p>
     </Tippy>
     // <li>{props.icon}</li>
   )
