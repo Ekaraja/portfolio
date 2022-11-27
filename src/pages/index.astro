@@ -5,7 +5,7 @@
 	import Footer from '../components/Footer.astro';
 	import PortfolioPreview from '../components/PortfolioPreview.astro';
 	import StackCards from '../components/StackCards';
-		import { TypeAnimation } from 'react-type-animation';
+	import { TypeAnimation } from 'react-type-animation';
 
 	// Data Fetching: List all Markdown posts in the repo.
 	const projects = await Astro.glob('./project/**/*.md');
@@ -20,6 +20,8 @@
 <head>
 	<MainHead title="Eric Soeun" description="Jeanine White: Developer, Speaker, and Writer..." />
 	<style>
+		@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
 		.wrapper {
 			margin-top: 2em;
 			margin-bottom: 2em;
@@ -218,6 +220,12 @@
 			font-size: var(--f-u1);
 			margin-top: 1.5rem;
 			margin-bottom: 0;
+			padding: 5px 20px;
+			background: black;
+			color: white;
+			font-weight: bold;
+			font-size: 1.3em;
+			font-family: 'PT Mono', monospace;
 		}
 
 		.subtitle {
@@ -272,22 +280,17 @@
 				<a href="https://fr.holidog.com/recherche/profil/66580" class="role">🐕 Pet sitter <span
 						class="invert">🐈 Pet sitter </span></a>
 			</div>
-			<p class="desc">A language enthusiast who wants to develop learning tools </p>
-			<StackCards client:load/>
-			    <!-- <TypeAnimation client:load
-    sequence={[
-    "Je cherche une entreprise !",
-    1000,
-    "Je cherche ",
-    1000,
-    'Disponible dès décembre 2022',
-    1000,
-    ]}
-      wrapper="div"
-      cursor={true}
-      repeat={Infinity}
-      style={{ fontSize: '2em' }}
-    /> -->
+			<!-- <p class="desc">A language enthusiast who wants to develop learning tools </p> -->
+			<p class="desc">
+				<TypeAnimation client:load 
+					sequence={[ 'A language enthusiast eager to develop learning tools' ,
+					4000, 'A language enthusiast eager to develop games' ,
+					4000, 'A language enthusiast eager to develop creative app' ,
+					6000, 'A language enthusiast eager to develop any ambitious project' , 4000, ]} speed={30} wrapper="span"
+					repeat={10} />
+			</p>
+
+			<StackCards client:load />
 		</div>
 	</header>
 	<main class="wrapper">

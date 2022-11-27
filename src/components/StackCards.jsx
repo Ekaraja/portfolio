@@ -1,4 +1,4 @@
-import * as icon from "../../public/assets/icons"
+import * as icon from "./icons/icons"
 import "./styles/StackCards.css"
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
