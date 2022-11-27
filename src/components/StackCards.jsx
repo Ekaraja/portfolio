@@ -1,6 +1,6 @@
 import * as icon from "./icons/icons"
 import "./styles/StackCards.css"
-import Tippy from '@tippyjs/react';
+import {Tippy} from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/themes/light.css';
 
