@@ -5,14 +5,15 @@ import 'tippy.js/dist/tippy.css';
 import 'tippy.js/themes/light.css';
 
 
-const LanguageIcon = (props) => (
+const LanguageIcon = (props) => {
   <Tippy content={props.language} placement="bottom" theme="light">
     <li>{props.icon}</li>
   </Tippy>
-);
+  }
 
 
 function StackCards() {
+
 
     return ( 
         <div>
