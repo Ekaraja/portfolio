@@ -4,7 +4,6 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/themes/light.css';
 
-function StackCards() {
 
 const LanguageIcon = (props) => (
   <Tippy content={props.language} placement="bottom" theme="light">
@@ -12,6 +11,8 @@ const LanguageIcon = (props) => (
   </Tippy>
 );
 
+
+function StackCards() {
 
     return ( 
         <div>
