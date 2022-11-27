@@ -8,9 +8,12 @@ import 'tippy.js/themes/light.css';
 
 const LanguageIcon = ({language, icon}) => {
   return (
-    <Tippy content={language} placement="bottom" theme="light">
-      <p>{icon}</p>
-    </Tippy>
+    // <Tippy content={language} placement="bottom" theme="light">
+    //   <p>{icon}</p>
+    // </Tippy>
+    <div> {language}
+      <li>{icon}</li>
+    </div>
     // <li>{props.icon}</li>
   )
 }
