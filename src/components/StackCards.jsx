@@ -20,8 +20,8 @@ function StackCards() {
                         {/* <LanguageIcon language={"HTML"} icon={icon.html}/>
                         <LanguageIcon language={"CSS"} icon={icon.css}/>
                         <LanguageIcon language={"JavaScript"} icon={icon.javascript}/>
-                        <LanguageIcon language={"React"} icon={icon.react}/>
-                        <LanguageIcon language={"Ruby"} icon={icon.ruby}/> */}
+                        <LanguageIcon language={"React"} icon={icon.react}/>*/}
+                        <LanguageIcon language="Ruby" icon={icon.ruby}/> 
                          <li>{icon.javascript}</li>
             </ul>
         </div>
