@@ -28,13 +28,11 @@ function StackCards() {
         <LanguageIcon language="JavaScript" icon={icon.javascript} />
         <LanguageIcon language="React" icon={icon.react} />
         <LanguageIcon language="Ruby" icon={icon.ruby} /> */}
-        {/* <LanguageIcon icon={icon.ruby} />
-        <Tippy content="CSS3">
-          <p>HTML</p>
-        </Tippy> */}
-
-         <LanguageIcon language="React" icon={icon.react} />
-         
+        <LanguageIcon icon={icon.html} />
+        <LanguageIcon icon={icon.css} />
+        <LanguageIcon icon={icon.javascript} />
+        <LanguageIcon icon={icon.react} />
+        <LanguageIcon icon={icon.ruby} />
       </ul>
     </div>
   );
