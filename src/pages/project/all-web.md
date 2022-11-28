@@ -1,16 +1,18 @@
 ---
-layout: ../../../layouts/project.astro
-title: Voltaage
-client: Voltaage.io
-publishDate: 2020-03-04 00:00:00
-img: "/assets/voltaage-thumbnail.png"
+layout: ../../layouts/project.astro
+title: Web4All
+client: Self
+publishDate: 2020-03-02 00:00:00
+img: "/assets/w4all-thumbnail.png"
 description: |
-  We took some cool pictures of the moon and made a website about it.
+  We built an educational purpose game to help web developers to test their knowledge through quizz and coding challenges
 tags:
-  - design
-  - dev
-  - branding
+  - React
+  - Education
+  - Game
+  - Dev
 ---
+
 
 Rubber cheese mascarpone cut the cheese. Jarlsberg parmesan cheesy grin cream cheese port-salut stinking bishop ricotta brie. Roquefort when the cheese comes out everybody's happy goat cheese triangles stilton cheese and biscuits goat babybel. Bocconcini roquefort queso danish fontina pecorino.
 
