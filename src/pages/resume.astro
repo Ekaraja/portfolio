@@ -2,7 +2,6 @@
 	import MainHead from '../components/MainHead.astro';
 	import Footer from '../components/Footer.astro';
 	import Nav from '../components/Nav.astro';
-	import AboutText from '../components/AboutText.jsx';
 ---
 
 <html lang="en">
@@ -10,36 +9,13 @@
 <head>
 	<MainHead title="Resume" description="My resume" />
 	<style>
-		.heroImg {
-			max-height: 24rem;
-			object-fit: cover;
-			overflow: hidden;
-		}
-
-		.heroImg img {
-			width: 100%;
-			border-radius: 2rem;
-		}
-
-		.bio {
-			font-size: var(--f-u1);
-			line-height: 2;
-			margin-top: 4em;
-		}
-
-		.wrapper.bio {
-			max-width: 50em;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
 	</style>
 </head>
 
 <body>
 	<Nav />
 	<div class="wrapper">
-		<iframe src="/public/assets/cv-alternance.pdf" title="CV de Eric Soeun" height="1000px" width="100%" />
+		<iframe src="/assets/cv-alternance.pdf" title="CV de Eric Soeun" height="1000px" width="100%" />
 	</div>
 	<Footer />
 </body>
