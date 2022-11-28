@@ -1,0 +1,79 @@
+.change-lang-button {
+  text-transform: uppercase;
+  display: inline-block;
+  outline: 0;
+  text-align: center;
+  cursor: pointer;
+  padding: 17px 30px;
+  border: 0;
+  color: #fff;
+  font-size: 17.5px;
+  border: 2px solid transparent;
+  border-color: #000;
+  color: #000;
+  background: transparent;
+  font-weight: 800;
+  line-height: 30px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.change-lang-button:hover {
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.about-paragraph {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1rem;
+}
+
+.fiver-figure figcaption {
+  font-size: .75rem;
+  color: #666;
+  text-align: end;
+  margin-inline: 1rem;
+}
+
+.fiver-reviews {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow-y: scroll;
+  max-height: 20rem;
+  border-radius: 1rem;
+  -webkit-filter: brightness(98%);
+          filter: brightness(98%);
+}
+
+.fiver-reviews::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+
+.fiver-reviews::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.github-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 1rem;
+}
+/*# sourceMappingURL=aboutText.css.map */

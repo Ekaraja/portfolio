@@ -106,3 +106,56 @@ h1 {
 	padding-left: 2rem;
 	padding-right: 2rem;
 }
+
+/* ANIMATIONS */
+
+.--fade-in-left {
+	  opacity: 0; 
+  animation: fadeInLeft 1s ease-in-out 0s forwards;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity:0;
+        transform: translatex(-100px);
+    }
+    to {
+        opacity:1;
+        transform: translatex(0);
+    }
+}
+
+.--fade-in-right {
+	  opacity: 0; 
+  animation: fadeInRight 1s ease-in-out 0s forwards;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity:0;
+        transform: translatex(100px);
+    }
+    to {
+        opacity:1;
+        transform: translatex(0);
+    }
+}
+
+.--fade-in-up  {
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out 0s forwards;;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}

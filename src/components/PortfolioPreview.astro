@@ -2,25 +2,26 @@
 	const { frontmatter, url } = Astro.props.project;
 ---
 
-<div class="card">
-	<div class="titleCard" style={`background-image:url(${frontmatter.img})`}>
-		<h1 class="title">{frontmatter.title}</h1>
-	</div>
-	<div class="descCard">
-		<p class="desc">{frontmatter.description}</p>
-		<div class="tags">
-			Tagged:
-			{frontmatter.tags.map((t) => (
-			<div class="tag" data-tag={t}>
-				{t}
-			</div>
-			))}
+<a href={url}>
+	<article class="card">
+		<div class="titleCard" style={`background-image:url(${frontmatter.img})`}>
+			<h1 class="title">{frontmatter.title}</h1>
 		</div>
-		<a class="link" href={url}>
-			<span class="linkInner">View</span>
-		</a>
-	</div>
-</div>
+		<div class="descCard">
+			<p class="desc">{frontmatter.description}</p>
+			<div class="tags">
+				{frontmatter.tags.map((t) => (
+				<div class="tag" data-tag={t}>
+					{t}
+				</div>
+				))}
+			</div>
+			<a class="link" href={url}>
+				<span class="linkInner">View</span>
+			</a>
+		</div>
+	</article>
+</a>
 
 <style>
 	.card {
@@ -29,6 +30,11 @@
 		color: var(--t-bg);
 		background: var(--t-fg);
 		border: 1px solid #f0f0f0;
+	}
+
+	.card a {
+		text-decoration: none;
+		color: inherit;
 	}
 
 	.title {
@@ -46,7 +52,11 @@
 		font-weight: 900;
 		text-transform: uppercase;
 		letter-spacing: 0.0625em;
-								/* backdrop-filter: brightness(80%) */
+		backdrop-filter: brightness(70%);
+	}
+
+	.title:hover {
+		backdrop-filter: brightness(100%);
 	}
 
 
@@ -54,9 +64,16 @@
 		border-radius: 2rem;
 		position: relative;
 		background-size: cover;
-		background-position: 50% 50%;
+		background-position: 100% 50%;
 		padding-top: 37.5%;
 		backdrop-filter: brightness(20%);
+		z-index: 2;
+		transition: all ease-in .4s;
+	}
+
+	.titleCard:hover {
+		transition: all ease-in .5s;
+		background-position: 100% 100%;
 	}
 
 	.descCard {
@@ -89,12 +106,13 @@
 		text-transform: uppercase;
 		transition: opacity 150ms linear;
 		border-radius: 2rem;
+		z-index: 1;
 	}
 
 	.link:focus,
 	.link:hover {
 		opacity: 1;
-		backdrop-filter: brightness(120%)
+		position: absolute;
 	}
 
 	.link:focus,
