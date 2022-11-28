@@ -3,7 +3,7 @@ layout: ../../../layouts/project.astro
 title: Voltaage
 client: Voltaage.io
 publishDate: 2020-03-04 00:00:00
-img: "/assets/voltaage-thumbnail.png"
+img: "/assets/voltaage-thumbnail.jpg"
 description: |
   We took some cool pictures of the moon and made a website about it.
 tags:

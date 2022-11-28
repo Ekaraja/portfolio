@@ -3,7 +3,7 @@ layout: ../../../layouts/project.astro
 title: Disque Rayé
 client: Self
 publishDate: 2020-03-04 00:00:00
-img: "/assets/disque-raye-thumbnail.png"
+img: "/assets/disque-raye-thumbnail.jpg"
 description: |
   We took some cool pictures of the moon and made a website about it.
 tags:

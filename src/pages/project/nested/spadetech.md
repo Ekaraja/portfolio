@@ -3,7 +3,7 @@ layout: ../../../layouts/project.astro
 title: Spadetech
 client: Spadetech.io
 publishDate: 2020-03-04 00:00:00
-img: "/assets/spadetech-thumbnail.png"
+img: "/assets/spadetech-thumbnail.jpg"
 description: |
   We took some cool pictures of the moon and made a website about it.
 tags:

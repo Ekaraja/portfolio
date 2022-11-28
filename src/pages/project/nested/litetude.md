@@ -3,7 +3,7 @@ layout: ../../../layouts/project.astro
 title: Litétude
 client: Self
 publishDate: 2020-03-04 00:00:00
-img: "/assets/litetude-thumbnail.png"
+img: "/assets/litetude-thumbnail.jpg"
 description: |
   We took some cool pictures of the moon and made a website about it.
 tags:
