@@ -48,8 +48,8 @@ function AboutText() {
 				<p> Après une formation de linguiste et de professeur de langues, durant laquelle j'ai enseigné pendant 2
 					ans ; j'ai appris le développement web afin de créer des applications dans le domaine de l’éducation.
 
-					J'ai commencé à apprendre le code et le développement en autodidacte en 2020. Suivi d’un programme
-					intensif d'apprentissage du code de 4 mois où j'ai appris les compétences fondamentales pour créer une
+					J'ai commencé à apprendre la programmation en autodidacte en 2020. Suivi d’un cours
+					intensif de code de 4 mois où j'ai appris les compétences fondamentales pour créer une
 					application web à partir de zéro. (HTML/CSS/JS/React/Express/Mongo DB). </p>
 
 					<figure className="fiver-figure"><div className="fiver-reviews"><img src="/assets/fiver-reviews-full.jpeg" alt="Fiver reviews" /></div><figcaption>Feedbacks de clients récents</figcaption></figure>
@@ -74,7 +74,7 @@ function AboutText() {
 					développement web.</p>
 
 				<p>
-					Je cherche activement une entreprise pour débuter une alternance en décembre 2022. C'est une alternance de 16 mois, où j'approfondirai les technologies suivantes :
+					Actuellement je cherche activement une entreprise pour débuter une alternance en décembre 2022. C'est une alternance de 16 mois, où j'approfondirai les technologies suivantes :
 
 					<ul>
 						<li>PHP & Laravel</li>
