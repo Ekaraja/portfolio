@@ -52,7 +52,7 @@ function AboutText() {
 					intensif d'apprentissage du code de 4 mois où j'ai appris les compétences fondamentales pour créer une
 					application web à partir de zéro. (HTML/CSS/JS/React/Express/Mongo DB). </p>
 
-					<figure className="fiver-figure"><div className="fiver-reviews"><img src="/public/assets/fiver-reviews-full.jpeg" alt="Fiver reviews" /></div><figcaption>Feedbacks de clients récents</figcaption></figure>
+					<figure className="fiver-figure"><div className="fiver-reviews"><img src="/assets/fiver-reviews-full.jpeg" alt="Fiver reviews" /></div><figcaption>Feedbacks de clients récents</figcaption></figure>
 
 				<p>A ce jour après 1 an et demi de freelance, j'ai satisfait une trentaine de client à travers des missions
 					front-end variée allant de : </p>
