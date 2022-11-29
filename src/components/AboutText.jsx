@@ -46,13 +46,13 @@ function AboutText() {
 		return (
 			<article className="--fade-in-right about-paragraph" key={language}>
 				<p> Après une formation de linguiste et de professeur de langues, durant laquelle j'ai enseigné pendant 2
-					ans ; j'ai appris le développement web afin de créer des applications dans le domaine de l’éducation.
+					ans ; j'ai appris le développement web afin de créer des applications dans le domaine de l’éducation.</p>
 
-					J'ai commencé à apprendre la programmation en autodidacte en 2020. Suivi d’un cours
-					intensif de code de 4 mois où j'ai appris les compétences fondamentales pour créer une
-					application web à partir de zéro. (HTML/CSS/JS/React/Express/Mongo DB). </p>
-
-					<figure className="fiver-figure"><div className="fiver-reviews"><img src="/assets/fiver-reviews-full.jpeg" alt="Fiver reviews" /></div><figcaption>Feedbacks de clients récents</figcaption></figure>
+					<p>
+						J'ai commencé à apprendre la programmation en autodidacte en 2020. Suivi d’un cours
+						intensif de code de 4 mois où j'ai appris les compétences fondamentales pour créer une
+						application web à partir de zéro. (HTML/CSS/JS/React/Express/Mongo DB).
+					</p>
 
 				<p>A ce jour après 1 an et demi de freelance, j'ai satisfait une trentaine de client à travers des missions
 					front-end variée allant de : </p>
@@ -63,6 +63,8 @@ function AboutText() {
 					<li>L'intégration de maquettes en HTML/CSS/JS & React</li>
 					<li>La reproduction à l'identique d'un site</li>
 				</ul>
+
+					<figure className="fiver-figure"><div className="fiver-reviews"><img src="/assets/fiver-reviews-full.jpeg" alt="Fiver reviews" /></div><figcaption>Feedbacks de clients récents</figcaption></figure>
 
 				Personne volontaire, toujours dans la recherche d’amélioration et l'apport de solution ; plutôt créative et
 				rarement à court d’idée !

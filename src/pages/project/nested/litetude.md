@@ -5,11 +5,11 @@ client: Self
 publishDate: 2020-03-04 00:00:00
 img: "/assets/litetude-thumbnail.jpg"
 description: |
-  We took some cool pictures of the moon and made a website about it.
+   E-Learning video platform for kids 
 tags:
-  - design
-  - dev
-  - branding
+  - education
+  - learning
+  - video-platform
 ---
 
 I made the landing page of an e-Learning video platform for kids in HTML/CSS/JS & React. It was a conversion of a provided Figma model.
